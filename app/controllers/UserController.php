@@ -102,4 +102,11 @@ class UserController extends BaseController {
 		}
 	}
 
+	public function imageDelete($id)
+	{
+		$image = Image::find($id);
+		$image->delete();
+		return Redirect::back();
+	}
+
 }

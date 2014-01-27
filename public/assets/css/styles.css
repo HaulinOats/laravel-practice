@@ -1,3 +1,18 @@
 body {
 	background-image: url('/assets/images/geometry.png');
 }
+.close-icon{
+	width:20px;
+	height:20px;
+	float:right;
+}
+.img-container{
+	float:left;
+	width:21%;
+	border: solid 2px;
+	border-radius: 10px;
+	background: white;
+}
+h2{
+	clear:both;
+}

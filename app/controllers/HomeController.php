@@ -21,6 +21,11 @@ class HomeController extends BaseController {
 		return View::make('login');
 	}
 
+	public function signupPage()
+	{
+		return View::make('signup');
+	}
+
 	public function userSignup()
 	{
 		$input = Input::all();

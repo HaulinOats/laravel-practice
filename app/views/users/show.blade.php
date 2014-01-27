@@ -5,7 +5,10 @@
 
 	<h2>Uploaded Images<h2>
 	@foreach($images as $image)
-		<img src="..{{ $image->url }}" alt="{{ $image->url }}" style="width:21%;margin:0% 2% 0% 2%;"/>
+	<div class="img-container">
+		<a href="{{ route('imageDelete', $image->id) }}"><img src="/assets/images/close-icon.png" alt="close" class="close-icon"/></a>
+		<img src="..{{ $image->url }}" alt="{{ $image->url }}" style="margin:1%;width:98%"/>
+	</div>
 	@endforeach
 	<h2>Upload Form</h2>
 	{{ Form::open(array('url' => 'image/upload', 'files'=> true)) }}
